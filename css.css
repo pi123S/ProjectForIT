@@ -6,7 +6,9 @@ body {
   }
   
   body {
-    background-image: url('https://www.nobilislawfirm.com/assets/img/law-firm.jpg');
+    background-image: url('ruce.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
   }
   
   h1 {
