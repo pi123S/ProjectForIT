@@ -6,11 +6,19 @@ body {
   }
   
   body {
-    background-image: url('https://www.nobilislawfirm.com/assets/img/law-firm.jpg');
+    background-image: url('ruce.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
   }
   
   h1 {
     margin: 0;
+    background-color: gray;
+    color: black;
+  }
+
+  header{
+    background-color: gray;
   }
   
   #main-menu {
@@ -28,7 +36,8 @@ body {
   }
   
   #main-menu ul li a {
-    color: #fff;
+    background-color: gray;
+    color: black;
     text-decoration: none;
   }
   
