@@ -46,3 +46,17 @@ body {
     margin: 50px;
     text-align: center;
   }
+
+  #cntct-info{
+    display: flex;
+  }
+
+  input{
+    margin: 5px 5px;
+    border: none;
+    border-bottom: 1px solid gray;
+  }
+
+  #content{
+    width: 90%;
+  }
