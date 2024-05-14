@@ -42,12 +42,13 @@
         <div id="cntct-form">
             <form>
                 <div id="cntct-info">
-                <input type="text" id="usrname" class="cntct" placeholder="Име" >
-                <input type="email" id="email" class="cntct" placeholder="E-mail" >
-                <input type="tel" id="tel" class="cntct" placeholder="Телефон" >
+                <input type="text" class="cntct" name="name" placeholder="Име" >
+                <input type="email" class="cntct" name="email" placeholder="E-mail" >
+                <input type="tel" class="cntct" name="tel" placeholder="Телефон" >
                 </div>
-                <input type="text" id="topic" name="topic" placeholder="Тема" >
-                <br><input type="text" id="content" name="content" placeholder="Вашето съобщение..."  ></br>
+                <input type="text" class="cntct" id="topic" name="topic" placeholder="Тема" >
+                <br><textarea class="cntct" id="content" name="content" placeholder="Вашето съобщение..." ></textarea></br>
+                <input type="submit" id="button" value="Изпрати">
             </form>
         </div>
     </body>
