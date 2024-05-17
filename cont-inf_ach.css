@@ -36,6 +36,14 @@ body {
     color: #fff;
     text-decoration: none;
   }
+
+  a:hover {
+    border-bottom: 2px solid white;
+  }
+  
+  .current{
+    border-bottom: 2px solid gray;
+  }
   
 /*contact*/
 
