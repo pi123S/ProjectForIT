@@ -1,55 +1,72 @@
 <html>
-    <head>
-        <meta charset="UTF-8">
-        <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <title>Адвокати за адвокати - Контакти</title>
-        <link rel="stylesheet" href="cont-inf_ach.css">
-    </head>
-    
-    <header>
-        <h1>Адвокати за адвокати</h1>
-        <nav id="main-menu">
-          <ul>
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Адвокати за адвокати - Контакти</title>
+    <link rel="stylesheet" href="cont-inf_ach.css">
+    <link rel="stylesheet" href="stylesheet_peter.css">
+</head>
+
+<header>
+    <h1>Адвокати за адвокати</h1>
+    <nav id="main-menu">
+        <ul>
             <li><a href="kantora.html">Home</a></li>
             <li><a href="#">About Us</a></li>
             <li><a href="services_Peter.html">Services</a></li>
             <li><a href="contact-info.html">Contact</a></li>
-          </ul>
-        </nav>
-    </header>
-
-    <body>
+            <li><a href="achievments.html">Our Achievments</a></li>
+            <li><a href="Advert_Peter.html">FAQ's</a></li>
+        </ul>
+    </nav>
+    <div class="title">
         <h1>Контакти</h1>
         <h2>Адвокатска кантора Адвокати за адвокати, гр. София</h2>
         <h4>Адвокат Георги Делийски</h4>
-        <div class="parent">
-            <div class="card">
-                <h5>Адрес</h5>
-                <p>България, София 9025 ул. Ябълкова градина 24, 5 етаж</p>
-            </div>
-            <div class="card">
-                <h5>Телефон</h5>
-                <p>Тел: 0889-232-547</p>
-                <p>Тел: 0876-345-098</p>
-            </div>
-            <div class="card">
-                <h5>Работно време</h5>
-                <p>Понеделник-Петък: 09:00-18:00ч</p>
-                <p>Събота: 11:00-15:00</p>
-                <p>Неделя: Почивен Ден</p>
-            </div>
+    </div>
+</header>
+
+<body>
+    <div class="parent">
+        <div class="card">
+            <h5>Адрес</h5>
+            <p>България, София 9025 ул. Ябълкова градина 24, 5 етаж</p>
         </div>
-        <div id="cntct-form">
-            <form>
-                <div id="cntct-info">
-                <input type="text" id="usrname" class="cntct" placeholder="Име" >
-                <input type="email" id="email" class="cntct" placeholder="E-mail" >
-                <input type="tel" id="tel" class="cntct" placeholder="Телефон" >
-                </div>
-                <input type="text" id="topic" name="topic" placeholder="Тема" >
-                <br><input type="text" id="content" name="content" placeholder="Вашето съобщение..."  ></br>
-            </form>
+        <div class="card">
+            <h5>Телефон</h5>
+            <p>Тел: 0889-232-547</p>
+            <p>Тел: 0876-345-098</p>
         </div>
-    </body>
-    <script src="java.js"></script>
+        <div class="card">
+            <h5>Работно време</h5>
+            <p>Понеделник-Петък: 09:00-18:00ч</p>
+            <p>Събота: 11:00-15:00</p>
+            <p>Неделя: Почивен Ден</p>
+        </div>
+    </div>
+    <div id="space"></div>
+    <div id="cntct-form">
+        <form>
+            <div id="cntct-info">
+                <input type="text" class="cntct" name="name" placeholder="Име">
+                <input type="email" class="cntct" name="email" placeholder="E-mail">
+                <input type="tel" class="cntct" name="tel" placeholder="Телефон">
+            </div>
+            <input type="text" class="cntct" id="topic" name="topic" placeholder="Тема">
+            <br><textarea class="cntct" id="content" name="content" placeholder="Вашето съобщение..."></textarea></br>
+        </form>
+    </div>
+<!--Functia za popup sled kato natisnem submit(s javascript) vish dali ti haresva(shupeno e edno krukche s tikche otgore)-->
+    <div>
+        <button id="button" type="submit" class="btn" onclick="openPopup()">Submit</button>
+        <div class="popup" id="popup">
+            <img src="img/tick.png" alt="">
+            <h2>Thank You!</h2>
+            <p>Your Details has been Succesfully Submitted.Thanks!</p>
+            <button type="button" onclick="closePopup()">OK</button>
+        </div>
+</body>
+<script src="java.js"></script>
+
 </html>
