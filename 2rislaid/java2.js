@@ -1,3 +1,4 @@
+
 document.addEventListener('DOMContentLoaded', function() {
     const mainMenu = document.getElementById('main-menu');
     mainMenu.style.display = 'block';
@@ -15,3 +16,18 @@ document.addEventListener('DOMContentLoaded', function() {
     });
   });
   
+  for (var i = 0; i < document.links.length; i++) {
+    if (document.links[i].href === document.URL) {
+        document.links[i].className = 'current';
+    }
+ }
+
+ let popup = document.getElementById('popup')
+
+function openPopup(){
+  popup.classList.add('open-popup')
+}
+
+function closePopup(){
+  popup.classList.remove('open-popup')
+}
