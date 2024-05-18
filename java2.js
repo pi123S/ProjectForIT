@@ -1,4 +1,3 @@
-
 document.addEventListener('DOMContentLoaded', function() {
     const mainMenu = document.getElementById('main-menu');
     mainMenu.style.display = 'block';
