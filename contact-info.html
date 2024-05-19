@@ -7,27 +7,28 @@
         <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
         <link rel="stylesheet" href="stylesheet_peter.css">
     </head>
-    
-    <header>
-        <h1>Адвокати за адвокати</h1>
-        <nav id="main-menu">
-          <ul>
-            <li><a href="kantora.html">Начална страница</a></li>
-            <li><a href="2rislaid.html">За адвоката</a></li>
-            <li><a href="services_Peter.html">Услуги</a></li>
-            <li><a href="contact-info.html">Контакт</a></li>
-            <li><a href="achievments.html">Постижения</a></li>
-            <li><a href="Advert_Peter.html">FAQ's</a></li>
-        </ul>
-    </nav>
-    <div class="title">
-        <h1>Контакти</h1>
-        <h2>Адвокатска кантора Адвокати за адвокати, гр. София</h2>
-        <h4>Адвокат Георги Делийски</h4>
-    </div>
-</header>
 
     <body id="contact">
+        <div>
+        <header>
+            <h1>Адвокати за адвокати</h1>
+            <nav id="main-menu">
+              <ul>
+                <li><a href="kantora.html">Начална страница</a></li>
+                <li><a href="2rislaid.html">За адвоката</a></li>
+                <li><a href="services_Peter.html">Услуги</a></li>
+                <li><a href="contact-info.html">Контакт</a></li>
+                <li><a href="achievments.html">Постижения</a></li>
+                <li><a href="Advert_Peter.html">FAQ's</a></li>
+            </ul>
+        </nav>
+        <div class="title">
+            <h1>Контакти</h1>
+            <h2>Адвокатска кантора Адвокати за адвокати, гр. София</h2>
+            <h4>Адвокат Георги Делийски</h4>
+        </div>
+    </header>
+
         <div class="parent">
             <div class="card">
                 <h5>Адрес</h5>
@@ -43,7 +44,7 @@
                 <p><a href="https://www.youtube.com/watch?v=n13P9uwmnkY" class="lnk"><i class="fa fa-facebook-official"></i> Адвокати за адвокати</a></p>
                 <p><a href="https://www.youtube.com/watch?v=n13P9uwmnkY" class="lnk"><p><i class="fa fa-telegram"></i> Георги Делийски</a></p>
             </div>
-            <div class="card">
+            <div class="card" id="work-hours">
                 <h5>Работно време</h5>
                 <p>Понеделник-Петък: 09:00-18:00ч</p>
                 <p>Събота: 11:00-15:00</p>
@@ -51,26 +52,30 @@
             </div>
     </div>
     <div id="space"></div>
-    <div id="cntct-form">
-        <form>
-            <div id="cntct-info">
-                <input type="text" class="cntct" name="name" placeholder="Име">
-                <input type="email" class="cntct" name="email" placeholder="E-mail">
-                <input type="tel" class="cntct" name="tel" placeholder="Телефон">
-            </div>
-            <input type="text" class="cntct" id="topic" name="topic" placeholder="Тема">
-            <br><textarea class="cntct" id="content" name="content" placeholder="Вашето съобщение..."></textarea></br>
-        </form>
-    </div>
-<!--popup-->
-    <div>
-        <button id="button" type="submit" class="btn" onclick="openPopup()">Submit</button>
-        <div class="popup" id="popup">
-            <img src="img/tick.png" alt="">
-            <h2>Thank You!</h2>
-            <p>Your Details has been Succesfully Submitted.Thanks!</p>
-            <button type="button" onclick="closePopup()">OK</button>
+    <div id="frm">
+        <div id="cntct-form">
+            <form id="cform">
+                <div id="udata">
+                    <input type="text" class="cntct" name="uname" placeholder="Име">
+                    <input type="email" id="email" class="cntct" name="email" placeholder="E-mail">
+                    <input type="tel" id="tel" class="cntct" name="tel" placeholder="Телефон">
+                </div>
+                <input type="text" class="cntct" id="topic" name="topic" placeholder="Тема">
+                <br><textarea class="cntct" id="content" name="content" placeholder="Вашето съобщение..."></textarea></br>
+            </form>
         </div>
+        <div id="pp">
+            <button id="button" type="submit" class="btn" onclick="openPopup()">Submit</button>
+            <div class="popup" id="popup">
+                <img src="black-check-mark.jpg" alt="">
+                <h2>Благодарим!</h2>
+                <p>Съобщението Ви бе изпаратено.</p>
+                <button type="button" onclick="closePopup()">OK</button>
+            </div>
+        </div>
+    </div>
+    </body>
+</div>
 </body>
 <script src="java.js"></script>
 

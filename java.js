@@ -26,6 +26,7 @@ document.addEventListener('DOMContentLoaded', function() {
 
 function openPopup(){
   popup.classList.add('open-popup')
+  document.getElementById("cform").reset(); 
 }
 
 function closePopup(){
