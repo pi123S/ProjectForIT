@@ -219,6 +219,11 @@ body {
   }
 
   /*achievments*/
+
+  #ach{
+    background-image: url(bgg.avif);
+  }
+
   #text{
     margin-top: 5px;
     margin-left: 2px;
@@ -226,6 +231,19 @@ body {
     font-family: Arial, sans-serif;
   }
 
-  img{
+  #ach-title{
+    margin-bottom: 5px;
+    text-align: center;
+    background-color: red;
+    color: white;
+    height: 7%;
+  }
+
+  .cert{
     height: 500px;
+    /*margin: 2%;*/
+  }
+
+  .award{
+    margin: 2%;
   }
