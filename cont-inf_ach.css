@@ -29,9 +29,6 @@ body {
     margin: 0;
   }
   
-  #main-menu {
-    display: none;
-  }
   
   #main-menu ul {
     list-style-type: none;
