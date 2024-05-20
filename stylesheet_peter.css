@@ -65,3 +65,11 @@ h1 {
   padding: 20dp;
   text-align: left;
 }
+
+a:hover {
+  border-bottom: 2px solid white;
+}
+
+.current{
+  border-bottom: 2px solid gray;
+}
